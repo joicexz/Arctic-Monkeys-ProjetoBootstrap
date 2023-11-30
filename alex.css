@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    grid-template-areas: "header" "main";
+    grid-template-rows: 90px 1fr;
+    display: grid;
+}
+
+.header {
+    grid-area: header;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar-brand {
+    height: 80px;
+    width: 100px;
+    margin-left: 20px;
+}
+
+.main {
+    grid-area: main;
+    background-color: grey;
+    width: 100%;
+    height: 100%;
+    grid-template-areas: "container img-singer";
+    grid-template-columns: 1fr 600px;
+    display: grid;
+}
+
+.container {
+    grid-area: container;
+    background-color: rgb(7, 10, 10);
+    height: 520px;
+    width: 750px;
+    border-radius: 15px;
+    display: flex;
+    margin: 45px auto;
+    grid-template-areas: "title" "text-singer";
+    grid-template-rows: 180px 1fr;
+    display: grid;
+}
+
+.title {
+    grid-area: title;
+    grid-template-areas: "foto nome";
+    grid-template-columns: 180px 1fr;
+    display: grid;
+}
+
+.title img {
+    grid-area: foto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.title span {
+    grid-area: nome;
+    color: white;
+    height: 100px;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+
+.text-singer {
+    grid-area: text-singer;
+    color: white;
+    margin: 15px;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+}
+
+.img-singer {
+    grid-area: img-singer;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.primeira {
+    width: 220px;
+    height: 300px;
+    border-radius: 15px;
+    transform: rotate(-10deg);
+    position: relative;
+    top: 45px;
+    left: 50px;
+}
+
+.segunda {
+    width: 200px;
+    height: 250px;
+    border-radius: 15px;
+    transform: rotate(10deg);
+    position: relative;
+    left: 80px;
+    top: 220px;
+}
+
+.terceira {
+    width: 200px;
+    height: 250px;
+    border-radius: 15px;
+    transform: rotate(0deg);
+    position: relative;
+    top: 380px;
+    right: 350px;
+}
